@@ -12,16 +12,16 @@ class Post {
 
 final List<Post> posts = [
 Post(
-  title: 'SHUAIGE',
+  title: 'GOD0',
   author: 'Alain',
-  imageUrl: '',
+  imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
 ),
 Post(
-  title: 'SHUAIGE',
+  title: 'GOD1',
   author: 'Alain',
-  imageUrl: '',
+  imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
 ),Post(
-  title: 'SHUAIGE',
+  title: 'GOD2',
   author: 'Alain',
   imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
 ),
