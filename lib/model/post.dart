@@ -11,18 +11,29 @@ class Post {
 }
 
 final List<Post> posts = [
-Post(
-  title: 'GOD0',
-  author: 'Alain',
-  imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
-),
-Post(
-  title: 'GOD1',
-  author: 'Alain',
-  imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
-),Post(
-  title: 'GOD2',
-  author: 'Alain',
-  imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
-),
+  Post(
+    title: 'GOD0',
+    author: 'Alain',
+    imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
+  ),
+  Post(
+    title: 'GOD1',
+    author: 'Alain',
+    imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
+  ),
+  Post(
+    title: 'GOD2',
+    author: 'Alain',
+    imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
+  ),
+  Post(
+    title: 'GOD2',
+    author: 'Alain',
+    imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
+  ),
+  Post(
+    title: 'GOD2',
+    author: 'Alain',
+    imageUrl: 'https://www.baidu.com/img/bd_logo1.png',
+  ),
 ];
