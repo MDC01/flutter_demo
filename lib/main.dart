@@ -6,6 +6,7 @@ import './demo/basic_demo.dart';
 import './demo/layout_demo.dart';
 import './demo/view_demo.dart';
 import './demo/sliver_demo.dart';
+import './demo/navigator_demo.dart';
 
 void main() {
   runApp(App());
@@ -16,7 +17,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      // home: NavigatorDemo(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/about': (context) => Page(title: 'About'),
+      },
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
@@ -32,15 +38,15 @@ class Home extends StatelessWidget {
     return DefaultTabController(
       length: 4,
       child: Scaffold(
-      backgroundColor: Colors.grey[100],
+        backgroundColor: Colors.grey[100],
         appBar: AppBar(
           title: Text('DACHAUN'),
           actions: <Widget>[
             IconButton(
-            icon: Icon(Icons.search),
-            tooltip: 'Search',
-            onPressed: () =>debugPrint('Search botton is pressed.'),
-          ),
+              icon: Icon(Icons.search),
+              tooltip: 'Search',
+              onPressed: () => debugPrint('Search botton is pressed.'),
+            ),
           ],
           elevation: 0.0,
           bottom: TabBar(
@@ -66,8 +72,7 @@ class Home extends StatelessWidget {
         ),
         drawer: DrawerDemo(),
         bottomNavigationBar: BottomNavigationBarDemo(),
-        ),
+      ),
     );
   }
 }
-
