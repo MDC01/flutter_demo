@@ -3,7 +3,7 @@ import '../model/post.dart';
 
 class ViewDemo extends StatelessWidget {
   Widget build(BuildContext context) {
-    return GridViewBuilderDemo();
+    return PageViewBuildeDemo();
   }
 }
 
@@ -86,7 +86,6 @@ class GridViewCountDemo extends StatelessWidget {
 }
 
 class PageViewBuildeDemo extends StatelessWidget {
-  @override
   Widget _pageItemBuilder(BuildContext context, int index) {
     return Stack(
       children: <Widget>[
